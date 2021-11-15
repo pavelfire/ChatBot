@@ -11,7 +11,7 @@ object BotResponse {
     fun basicResponses(_message: String): String {
 
         val random = (0..2).random()
-        val message =_message.toLowerCase()
+        val message = _message.lowercase(Locale.getDefault())
 
         return when {
 
